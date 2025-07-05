@@ -53,7 +53,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url("images/bg3.png");
+  background: url("images/bg3.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /* Keeps the background in place while scrolling */
