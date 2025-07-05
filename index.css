@@ -1,0 +1,144 @@
+.circle-container {
+  position: absolute;
+  width: 90vmin;
+  height: 90vmin;
+  margin: 3vw;
+  /* border: 2px dashed gray; */
+  border-radius: 50%;
+  /* background: radial-gradient(circle, black, blue); */
+  /* background: radial-gradient(circle, #2c003e, #00f2fe); */
+  /* background: radial-gradient(circle, #013220, #F5F5DC); */
+  background: radial-gradient(circle, #ff7e5f, #f5f5dc);
+
+  animation: rotateCircle 40s linear infinite;
+  transform-origin: center center;
+}
+
+.circle-container-container {
+  display: flex;
+  justify-content: center;
+}
+
+.circle-container img {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+
+  animation: rotateImg 40s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateImg {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+/* --------------- */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("images/bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Keeps the background in place while scrolling */
+  background-position: center; /* Light ethnic pattern */
+  color: #333;
+}
+
+.hero {
+  /* background: url('https://i.ibb.co/M9TYpNM/wedding-pattern.jpg') no-repeat center center;
+      background-size: cover; */
+
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: #ffd700;
+  z-index: 1;
+  position: relative;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #fceabb;
+  z-index: 1;
+  position: relative;
+}
+
+section {
+  padding: 60px 20px;
+  position: relative;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  color: #a94442;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.divider {
+  width: 100px;
+  margin: 30px auto;
+  border-top: 4px dotted #a94442;
+}
+
+.info-box {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #eed6a6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.gallery img {
+  border: 5px solid #a94442;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #a94442;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Allows content to decide the height */
+  }
+}
