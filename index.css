@@ -179,7 +179,7 @@ p {
 @media (max-width: 768px) {
   .hero {
     height: auto; /* Allows content to decide the height */
-    top: 9vh;
+    top: 7vh;
   }
 
   .hero h1 {
