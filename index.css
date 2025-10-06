@@ -151,12 +151,6 @@ h2 {
   border: 3px solid #a94442;
 }
 
-#lingo-language-switcher{
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 1000;
-}
 
 @keyframes scrollLeft {
   0% {
@@ -185,7 +179,7 @@ p {
 @media (max-width: 768px) {
   .hero {
     height: auto; /* Allows content to decide the height */
-    
+    top: 6vh;
   }
 
   .hero h1 {
